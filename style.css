@@ -1,0 +1,48 @@
+/* Reset default list styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+/* Style for todo items */
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Style for todo item text */
+li span {
+    flex: 1;
+    /* Take up remaining space */
+    margin-left: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+
+/* Style for delete button */
+li button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+/* Style for completed todo items */
+li.completed span {
+    background-color: #e0e0e0;
+    /* Light gray background */
+    color: #999;
+    /* Dim text color */
+    text-decoration: line-through;
+    /* Strikethrough text */
+}
